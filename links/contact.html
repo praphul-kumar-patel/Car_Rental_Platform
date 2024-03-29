@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="first">
+        <div class="header">
+            <img src="HomeIcon/car.png" alt="">
+            <h1> <a href="index.html">Journey Juntion</a></h1>
+
+            <div class="element">
+                <a href="about.html">About</a>
+                <a href="cars.html">Cars</a>
+                <a href="service.html">Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <div class="button">
+                <a href="signin.html">Sign In</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <from action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="d7ec5fc3-99c3-4705-9187-cc0faa83202a">
+
+           <label for="Name">Name</label>
+            <input type="text" id="Name" placeholder="Enter Your Name...." required>
+
+            <label for="Email">Email</label>
+            <input type="text" id="Email" placeholder="Enter Your Email..." required>
+
+            <label for="Contact">Contact Number</label>
+            <input type="text" id="Contact" placeholder="Enter Your Contact number..." required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Enter Your Subject..." required>
+
+            <label for="message">Message</label>
+            <textarea class="text" name="message" id="message" placeholder="Enter Your Message" required></textarea>
+
+
+                <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+                <div class="popup">
+                    <img src="about/Choose icons/submit.png" alt="">
+                    <h2>Thank You!</h2>
+                    <p>Your details has been successfully submited. Thanks!</p>
+                    <!-- <button type="button" onclick="closePopup()">OK</button> -->
+                    <div class="home">
+                    <a href="index.html" type="button" onclick="closePopup">Home</a>
+                    </div>
+                </div>
+            </div>
+        </from>
+    </div>
+
+    <script>
+        let popup = document.querySelector(".popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+
+</body>
+</html>
+

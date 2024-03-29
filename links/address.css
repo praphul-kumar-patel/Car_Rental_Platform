@@ -1,0 +1,142 @@
+*{padding:0; 
+	margin:0; 
+	box-sizing: border-box; 
+	font-family:sans-serif;
+}
+
+header{
+	width: 100vw;
+	min-height: 100vh;
+	background: #34495e;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	background: white;
+	max-width: 900px;
+	min-height: 600px;
+	display: flex;
+	justify-content:space-between;
+	align-items: flex-start;
+	padding: 0.5rem 1.5rem;
+}
+
+.left{
+	flex-basis: 50%;
+}
+
+.right{
+	flex-basis: 50%;
+}
+
+form{
+	padding: 1rem;
+}
+
+h3{
+	margin-top: 1rem;
+	color:#2c3e50;
+}
+
+form input[type="text"]{
+	width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+}
+
+#zip{
+	display: flex;
+	margin-top: 0.5rem;
+}
+#zip select{
+	padding: 0.5rem 0.7rem;
+}
+#zip input[type="number"]{
+	padding: 0.5rem 0.7rem;
+	margin-left: 5px;	
+}
+
+.btn {
+    padding: 10px 80px;
+    background: #70e445;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+	margin: 15px 60px;
+}
+
+.popup {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.0);
+    transition-duration: 1.5s;
+}
+.popup img{
+    width: 60%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0 , 0, 0, 0.2);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 30px 10px;
+}
+.popup .home{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup a{
+    height: 40px;
+    width: 80%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6fd649;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+
+input[type="submit"]:hover{
+	background: #2c3e50;
+}
+
+@media only screen and (max-width: 770px){
+	.container{
+		flex-direction: column;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}

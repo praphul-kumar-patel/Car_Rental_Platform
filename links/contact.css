@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 130vh;
+    font-family: sans-serif;
+    background: linear-gradient(#ffdad5, #eabbc6a5);
+}
+.first {
+    height: 10vh;
+    width: 99vw;
+}
+
+.header {
+    margin-top: 10px;
+    height: 45px;
+    width: 98.2vw;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    height: 35px;
+    width: 70px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img:hover {
+    filter: drop-shadow(10px 5px 20px rgb(67, 66, 66));
+}
+.header h1 a{
+    font-size: 35px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgba(72, 69, 69, 0.922);
+}
+
+.header .element a{
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0px 30px;
+    color: rgba(72, 69, 69, 0.922);
+}
+
+.header .element a:hover{
+    color: rgb(122, 122, 232);
+    transition-duration: 0.3s;
+}
+
+.header .button a{
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0px 10px;
+    color: rgb(79, 76, 76);
+}
+
+.header .button a:hover{
+    color: rgba(139, 224, 139, 0.863);
+    transition-duration: 0.3s;
+}
+
+
+.contact-container {
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-left{
+    display: grid;
+    height: 90%;
+    width: 30%;
+    margin-right: 10%;
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 35px;
+    text-align: center;
+    height: 50px;
+    width: 440px;
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+input{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 120px;
+    width: 400px;
+    padding-top: 15px;
+    padding-left: 25px;
+    border-radius: 20px;
+}
+
+.contact-input:focus{
+    border: 2px solid #ff994f;
+}
+.contact-input::placeholder{
+    color: #a9a9a9;
+}
+
+.btn {
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.popup {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.0);
+    transition-duration: 1.5s;
+}
+.popup img{
+    width: 60%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0 , 0, 0, 0.2);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 30px 10px;
+}
+.popup .home{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup a{
+    height: 40px;
+    width: 80%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6fd649;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+
+
+/* Media Queries for tablet devices */
+@media only screen and (max-width: 430px) {
+    .contact-container {
+        padding: 20px 0;
+    }
+
+    .contact-left {
+        width: 100%;
+        height: auto;
+        
+    }
+}
+
+/* Media Queries for mobile devices */
+@media only screen and (max-width: 430px) {
+    body {
+        height: auto;
+    }
+
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-left {
+        width: 100%;
+    }
+
+    .contact-left a {
+        width: 100%;
+    }
+
+    .contact-right img{
+        height: auto;
+        width: 100%;
+    }
+}

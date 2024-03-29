@@ -1,0 +1,120 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+.first {
+    height: 10vh;
+    width: 99vw;
+}
+
+.header {
+    margin-top: 10px;
+    height: 45px;
+    width: 98.2vw;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    height: 35px;
+    width: 70px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header img:hover {
+    filter: drop-shadow(10px 5px 20px rgb(67, 66, 66));
+}
+.header h1 a{
+    font-size: 35px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgba(72, 69, 69, 0.922);
+    
+}
+
+.header .element a{
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0px 30px;
+    color: rgba(72, 69, 69, 0.922);
+}
+
+.header .element a:hover{
+    color: rgb(122, 122, 232);
+    transition-duration: 0.3s;
+}
+
+.header .button a{
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0px 30px;
+    color: rgba(72, 69, 69, 0.922);
+}
+
+.header .button a:hover{
+    color: rgba(139, 224, 139, 0.863);
+    transition-duration: 0.3s;
+}
+.card{
+    display: flex;
+    margin-top: 22px;
+}
+.left img{
+    width: 600px;
+    height: 500px;
+    margin-inline:32px ;
+    border-radius: 5px;
+    border: 1.2px solid rgba(87, 86, 86, 0.388);
+}
+.card .img img{
+    width: 74px;
+    height: 50px;
+    margin-left: 22px;
+    cursor: pointer;
+}
+ 
+.card .right {
+    margin-top: 11px;
+}
+.right h3{
+    margin-top: 11px;
+    color: gray;
+}
+.right h1{
+    margin-top: 11px;
+}
+.right i{
+    margin-top: 11px;
+    color: green;
+}
+.right h4{
+    margin-top: 11px;
+}
+.right p{
+    margin-top: 11px;
+}
+.right button{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(255, 106, 0);
+    font-size: 25px;
+    border: none;
+    margin-top: 40px;
+    margin-inline: 22px;
+    font-weight: 600;
+    margin-left: 30%;
+}
+.right button a {
+    text-decoration: none;
+    color: white;
+}
+.right button:hover{
+    background-color: rgb(255, 136, 0);
+    cursor: pointer;
+}
